@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorful Login Form</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="login">
+      <h2 id="txt">Login</h2>
+      <div class="inputBox">
+        <input type="text" placeholder="Username" />
+      </div>
+      <div class="inputBox">
+        <input type="password" placeholder="Password" />
+      </div>
+      <div class="inputBox">
+        <input id="btn" type="submit" value="Login" />
+      </div>
+      <div class="group">
+        <a href="#">Forget Password</a>
+        <a href="#">Sign Up</a>
+      </div>
+    </div>
+
+    <!--Colors-->
+    <div id="changeClr" class="colors active">
+      <span
+        class="active"
+        onclick="changeColor('#1dd1a1')"
+        style="--clr: #1dd1a1"
+      ></span>
+      <span onclick="changeColor('#111')" style="--clr: #111"></span>
+      <span onclick="changeColor('#8E2DE2')" style="--clr: #8e2de2"></span>
+      <span onclick="changeColor('#FF416C')" style="--clr: #ff416c"></span>
+      <span onclick="changeColor('#1FA2FF')" style="--clr: #1fa2ff"></span>
+    </div>
+    <div class="ColorTab active">
+      <input id="btn" type="submit" value=">>" />
+    </div>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
